@@ -55,6 +55,15 @@ h1 {
   font-size: 7vw;
   margin-top: 0;
 }
+
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: right;
+}
+
 a {
   color: #f00;
 }
@@ -142,6 +151,12 @@ a {
 
 .header-nav > li {
   display: inline-block;
+  margin-left: 1em;
+}
+
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(0,0,0,0.3);
+  padding-left: 1em;
 }
 
 .header-nav a {
@@ -150,4 +165,22 @@ a {
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ff8f00;
+}
+
+.header-nav >li:first-child a {
+  color: red;
+}
+
+.header-nav >li:first-child a:hover {
+  color: blue;
+}
+
+.header-logo:hover,
+.header-logo:active {
+  opacity: 0.5;
 }
